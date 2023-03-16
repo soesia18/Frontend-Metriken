@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?Mapping XmlNamespace="urn:bfsvclib" ClrNamespace="dotNetBF.Gui.Menus" Assembly="bfsvclib"?>
+<MenuRepository xmlns="urn:bfsvclib">
+
+    <MenuDefinition Entity="dotNetBF.Modules.Services.UI.Web.Main,BM.System.UI.Web" Name="Main">
+        <MenuGroup Name="system" Title="System">
+            <WorkflowMenuCommand Icon="brsdemo-img://consent-button.svg"  Name="Consent" Title="Erklärung zum Datenschutz" ContextObject="null" WorkflowName="ShowConsentTextMenu" />
+        </MenuGroup>
+    </MenuDefinition>
+</MenuRepository>
