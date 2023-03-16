@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?Mapping XmlNamespace="urn:bfsvclib" ClrNamespace="dotNetBF.Gui.Workflows" Assembly="bfsvclib" ?>
+<?Mapping XmlNamespace="urn:bm.system.ui.web" ClrNamespace="dotNetBF.Modules.Workflows" Assembly="BM.System.UI.Web"?>
+<WorkflowRepository xmlns="urn:bfsvclib">
+    <Workflow Entity="dotNetBF.Modules.Services.Security.User" Type="Custom" Name="ShowConsentText">
+        <Transaction Behavior="NewTransaction">
+            <Set Variable="user">dotNetBF.Modules.Services.Security.SecurityService.CurrentUser</Set>
+            <ShowForm Context="user" Form="consent-form" />
+        </Transaction>
+    </Workflow>
+    <Workflow  Type="Custom" Name="ShowConsentTextMenu">
+        <Transaction Behavior="NewTransaction">
+            <Set Variable="user">dotNetBF.Modules.Services.Security.SecurityService.CurrentUser</Set>
+            <ShowForm Context="user" Form="consent-form" />
+        </Transaction>
+    </Workflow>
+</WorkflowRepository>
